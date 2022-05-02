@@ -1,0 +1,1798 @@
+local UI = Instance.new("ScreenGui")
+local MainTopBar = Instance.new("Frame")
+local BackGround = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local PageHolder = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local executorPage = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local security = Instance.new("TextLabel")
+local EditorFrame = Instance.new("ScrollingFrame")
+local Lines = Instance.new("TextLabel")
+local Source = Instance.new("TextBox")
+local Comments_ = Instance.new("TextLabel")
+local Globals_ = Instance.new("TextLabel")
+local Keywords_ = Instance.new("TextLabel")
+local RemoteHighlight_ = Instance.new("TextLabel")
+local Strings_ = Instance.new("TextLabel")
+local Tokens_ = Instance.new("TextLabel")
+local Numbers_ = Instance.new("TextLabel")
+local SettingsPage = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local CheckBox = Instance.new("ImageButton")
+local Unchecked = Instance.new("ImageButton")
+local Text = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local AntiAfkToggle = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local GamesPage = Instance.new("ScrollingFrame")
+local CounterBlox = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local executeCounterBlox = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local Arsenal = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local executeArsenal = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local SonicSpeedSimulator = Instance.new("ImageLabel")
+local UICorner_12 = Instance.new("UICorner")
+local executeSonicSpeedSimulator = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local SlashingSimulator = Instance.new("ImageLabel")
+local UICorner_15 = Instance.new("UICorner")
+local executeSlashingSimulator = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local PetSimulatorX = Instance.new("ImageLabel")
+local UICorner_18 = Instance.new("UICorner")
+local executePetSimulatorX = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local BedWars = Instance.new("ImageLabel")
+local UICorner_21 = Instance.new("UICorner")
+local executeBedWars = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local ButtonHolder = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local ButtonHolder_2 = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Executor = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local GameHub = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local ExecutorButtons = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local Execute = Instance.new("ImageButton")
+local Clear = Instance.new("ImageButton")
+local UICorner_30 = Instance.new("UICorner")
+local Shadow = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local Title_3 = Instance.new("TextLabel")
+local Title_4 = Instance.new("TextLabel")
+local LoaderTopBar = Instance.new("Frame")
+local BackGround_2 = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local Bootstrapper = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local NovalineboostText = Instance.new("TextLabel")
+local LoadingAboutText = Instance.new("TextLabel")
+local versionText = Instance.new("TextLabel")
+local versionText_2 = Instance.new("TextLabel")
+local Checks = Instance.new("Frame")
+local Novaline = Instance.new("TextLabel")
+local Outline2 = Instance.new("ImageLabel")
+local CheckMark = Instance.new("ImageLabel")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Krnl = Instance.new("TextLabel")
+local Outline2_2 = Instance.new("ImageLabel")
+local CheckMark_2 = Instance.new("ImageLabel")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local SynapseX = Instance.new("TextLabel")
+local Outline1 = Instance.new("ImageLabel")
+local CheckMark_3 = Instance.new("ImageLabel")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local versionText_3 = Instance.new("TextLabel")
+local UICorner_34 = Instance.new("UICorner")
+local Shadow_2 = Instance.new("Frame")
+local Title_5 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+
+UI.Name = "UI"
+UI.Parent = game.CoreGui
+
+MainTopBar.Name = "MainTopBar"
+MainTopBar.Parent = UI
+MainTopBar.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+MainTopBar.Position = UDim2.new(0.261685342, 0, 0.317368686, 0)
+MainTopBar.Size = UDim2.new(0, 655, 0, 30)
+MainTopBar.Visible = false
+MainTopBar.ZIndex = 2
+
+BackGround.Name = "BackGround"
+BackGround.Parent = MainTopBar
+BackGround.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+BackGround.Position = UDim2.new(-0.000176183195, 0, 0, 0)
+BackGround.Size = UDim2.new(0, 616, 0, 317)
+
+UICorner.CornerRadius = UDim.new(0, 6)
+UICorner.Parent = BackGround
+
+PageHolder.Name = "PageHolder"
+PageHolder.Parent = BackGround
+PageHolder.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+PageHolder.Position = UDim2.new(-0.000176764152, 0, 0, 0)
+PageHolder.Size = UDim2.new(0, 655, 0, 317)
+
+UICorner_2.Parent = PageHolder
+
+executorPage.Name = "executorPage"
+executorPage.Parent = PageHolder
+executorPage.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+executorPage.Position = UDim2.new(0.242633283, 0, 0.126182958, 0)
+executorPage.Size = UDim2.new(0, 482, 0, 265)
+
+UICorner_3.Parent = executorPage
+
+ImageLabel.Parent = executorPage
+ImageLabel.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.00307103875, 0, 0.0316604339, 0)
+ImageLabel.Size = UDim2.new(0, 475, 0, 251)
+
+security.Name = "security"
+security.Parent = ImageLabel
+security.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+security.Size = UDim2.new(0, 552, 0, 258)
+security.Visible = false
+security.Font = Enum.Font.SourceSans
+security.TextColor3 = Color3.fromRGB(0, 0, 0)
+security.TextSize = 14.000
+
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = ImageLabel
+EditorFrame.Active = true
+EditorFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EditorFrame.BackgroundTransparency = 1.000
+EditorFrame.BorderSizePixel = 0
+EditorFrame.Size = UDim2.new(1, 0, 1, 0)
+EditorFrame.ScrollBarThickness = 0
+
+Lines.Name = "Lines"
+Lines.Parent = EditorFrame
+Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lines.BackgroundTransparency = 1.000
+Lines.Size = UDim2.new(-0.0231578946, 30, 2, 0)
+Lines.ZIndex = 4
+Lines.Font = Enum.Font.Code
+Lines.Text = "1"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 15.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+Source.Name = "Source"
+Source.Parent = EditorFrame
+Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Source.BackgroundTransparency = 1.000
+Source.Position = UDim2.new(0, 18, 0, 0)
+Source.Size = UDim2.new(0.973103642, 0, 4, 0)
+Source.ZIndex = 3
+Source.ClearTextOnFocus = false
+Source.Font = Enum.Font.Code
+Source.MultiLine = true
+Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+Source.Text = "print(\"Welcome to Novaline!\")"
+Source.TextColor3 = Color3.fromRGB(204, 204, 204)
+Source.TextSize = 15.000
+Source.TextXAlignment = Enum.TextXAlignment.Left
+Source.TextYAlignment = Enum.TextYAlignment.Top
+
+Comments_.Name = "Comments_"
+Comments_.Parent = Source
+Comments_.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Comments_.BackgroundTransparency = 1.000
+Comments_.Size = UDim2.new(1, 0, 1, 0)
+Comments_.ZIndex = 5
+Comments_.Font = Enum.Font.Code
+Comments_.Text = ""
+Comments_.TextColor3 = Color3.fromRGB(240, 71, 255)
+Comments_.TextSize = 15.000
+Comments_.TextXAlignment = Enum.TextXAlignment.Left
+Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+Globals_.Name = "Globals_"
+Globals_.Parent = Source
+Globals_.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Globals_.BackgroundTransparency = 1.000
+Globals_.Size = UDim2.new(1, 0, 1, 0)
+Globals_.ZIndex = 5
+Globals_.Font = Enum.Font.Code
+Globals_.Text = ""
+Globals_.TextColor3 = Color3.fromRGB(240, 71, 255)
+Globals_.TextSize = 15.000
+Globals_.TextXAlignment = Enum.TextXAlignment.Left
+Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+Keywords_.Name = "Keywords_"
+Keywords_.Parent = Source
+Keywords_.BackgroundColor3 = Color3.fromRGB(189, 35, 255)
+Keywords_.BackgroundTransparency = 1.000
+Keywords_.Size = UDim2.new(1, 0, 1, 0)
+Keywords_.ZIndex = 5
+Keywords_.Font = Enum.Font.Code
+Keywords_.Text = ""
+Keywords_.TextColor3 = Color3.fromRGB(240, 71, 255)
+Keywords_.TextSize = 15.000
+Keywords_.TextXAlignment = Enum.TextXAlignment.Left
+Keywords_.TextYAlignment = Enum.TextYAlignment.Top
+
+RemoteHighlight_.Name = "RemoteHighlight_"
+RemoteHighlight_.Parent = Source
+RemoteHighlight_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoteHighlight_.BackgroundTransparency = 1.000
+RemoteHighlight_.Size = UDim2.new(1, 0, 1, 0)
+RemoteHighlight_.ZIndex = 5
+RemoteHighlight_.Font = Enum.Font.Code
+RemoteHighlight_.Text = ""
+RemoteHighlight_.TextColor3 = Color3.fromRGB(240, 71, 255)
+RemoteHighlight_.TextSize = 15.000
+RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
+RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings_.Name = "Strings_"
+Strings_.Parent = Source
+Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Strings_.BackgroundTransparency = 1.000
+Strings_.Size = UDim2.new(1, 0, 1, 0)
+Strings_.ZIndex = 5
+Strings_.Font = Enum.Font.Code
+Strings_.Text = ""
+Strings_.TextColor3 = Color3.fromRGB(240, 71, 255)
+Strings_.TextSize = 15.000
+Strings_.TextXAlignment = Enum.TextXAlignment.Left
+Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+Tokens_.Name = "Tokens_"
+Tokens_.Parent = Source
+Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.BackgroundTransparency = 1.000
+Tokens_.Size = UDim2.new(1, 0, 1, 0)
+Tokens_.ZIndex = 5
+Tokens_.Font = Enum.Font.Code
+Tokens_.Text = ""
+Tokens_.TextColor3 = Color3.fromRGB(240, 71, 255)
+Tokens_.TextSize = 15.000
+Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+Numbers_.Name = "Numbers_"
+Numbers_.Parent = Source
+Numbers_.BackgroundColor3 = Color3.fromRGB(180, 252, 255)
+Numbers_.BackgroundTransparency = 1.000
+Numbers_.Size = UDim2.new(1, 0, 1, 0)
+Numbers_.ZIndex = 4
+Numbers_.Font = Enum.Font.Code
+Numbers_.Text = ""
+Numbers_.TextColor3 = Color3.fromRGB(240, 71, 255)
+Numbers_.TextSize = 15.000
+Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+SettingsPage.Name = "SettingsPage"
+SettingsPage.Parent = PageHolder
+SettingsPage.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+SettingsPage.BackgroundTransparency = 1.000
+SettingsPage.Position = UDim2.new(0.242633283, 0, 0.126182958, 0)
+SettingsPage.Size = UDim2.new(0, 482, 0, 265)
+SettingsPage.Visible = false
+
+UICorner_4.Parent = SettingsPage
+
+CheckBox.Name = "CheckBox"
+CheckBox.Parent = SettingsPage
+CheckBox.BackgroundTransparency = 1.000
+CheckBox.LayoutOrder = 1
+CheckBox.Position = UDim2.new(0.227946818, 0, 0.0501801968, 0)
+CheckBox.Size = UDim2.new(0, 25, 0, 25)
+CheckBox.ZIndex = 999999999
+CheckBox.Image = "rbxassetid://3926311105"
+CheckBox.ImageColor3 = Color3.fromRGB(150, 150, 150)
+CheckBox.ImageRectOffset = Vector2.new(4, 836)
+CheckBox.ImageRectSize = Vector2.new(48, 48)
+
+Unchecked.Name = "Unchecked"
+Unchecked.Parent = CheckBox
+Unchecked.BackgroundTransparency = 1.000
+Unchecked.LayoutOrder = 7
+Unchecked.Position = UDim2.new(-0.159999996, 0, -0.159999996, 0)
+Unchecked.Size = UDim2.new(0, 32, 0, 32)
+Unchecked.ZIndex = 3
+Unchecked.Modal = true
+Unchecked.Image = "rbxassetid://3926305904"
+Unchecked.ImageColor3 = Color3.fromRGB(150, 150, 150)
+Unchecked.ImageRectOffset = Vector2.new(124, 724)
+Unchecked.ImageRectSize = Vector2.new(36, 36)
+
+Text.Name = "Text"
+Text.Parent = CheckBox
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Position = UDim2.new(-3.79999995, 0, 0.359999686, 0)
+Text.Size = UDim2.new(0, 91, 0, 16)
+Text.ZIndex = 3
+Text.Font = Enum.Font.Nunito
+Text.Text = "Anti Afk"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextSize = 20.000
+Text.TextXAlignment = Enum.TextXAlignment.Left
+Text.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_5.CornerRadius = UDim.new(0, 2)
+UICorner_5.Parent = Text
+
+AntiAfkToggle.Name = "AntiAfkToggle"
+AntiAfkToggle.Parent = CheckBox
+AntiAfkToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfkToggle.BackgroundTransparency = 1.000
+AntiAfkToggle.Size = UDim2.new(0, 24, 0, 23)
+AntiAfkToggle.ZIndex = 999999999
+AntiAfkToggle.Font = Enum.Font.SourceSans
+AntiAfkToggle.Text = ""
+AntiAfkToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAfkToggle.TextSize = 14.000
+AntiAfkToggle.MouseButton1Down:Connect(function()
+	local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+	local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+	ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+	ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+	ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+	ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+	ca.TextSize=22;da.Parent=ca
+	da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+	da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+	_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+	_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="made by ur mom "
+	_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+	ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+	ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+	ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+		bb:CaptureController()bb:ClickButton2(Vector2.new())
+		ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
+end)
+
+Frame.Parent = SettingsPage
+Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0145228216, 0, 0.0339622647, 0)
+Frame.Size = UDim2.new(0, 133, 0, 35)
+
+GamesPage.Name = "GamesPage"
+GamesPage.Parent = PageHolder
+GamesPage.Active = true
+GamesPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesPage.BackgroundTransparency = 1.000
+GamesPage.BorderSizePixel = 0
+GamesPage.Position = UDim2.new(0.243000001, 0, 0.126000002, 0)
+GamesPage.Size = UDim2.new(0, 482, 0, 265)
+GamesPage.Visible = false
+GamesPage.CanvasSize = UDim2.new(0, 0, 3, 0)
+GamesPage.ScrollBarThickness = 0
+
+CounterBlox.Name = "CounterBlox"
+CounterBlox.Parent = GamesPage
+CounterBlox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CounterBlox.BorderSizePixel = 0
+CounterBlox.Position = UDim2.new(0.0145228216, 0, 0, 0)
+CounterBlox.Size = UDim2.new(0, 251, 0, 141)
+CounterBlox.Image = "http://www.roblox.com/asset/?id=9523559859"
+
+UICorner_6.Parent = CounterBlox
+
+executeCounterBlox.Name = "executeCounterBlox"
+executeCounterBlox.Parent = CounterBlox
+executeCounterBlox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+executeCounterBlox.BorderSizePixel = 0
+executeCounterBlox.Position = UDim2.new(1.08419073, 0, 0.730654061, 0)
+executeCounterBlox.Size = UDim2.new(0, 179, 0, 30)
+executeCounterBlox.Font = Enum.Font.SourceSansBold
+executeCounterBlox.Text = "execute"
+executeCounterBlox.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeCounterBlox.TextSize = 21.000
+executeCounterBlox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+executeCounterBlox.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+end)
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = executeCounterBlox
+
+TextLabel.Parent = CounterBlox
+TextLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel.Position = UDim2.new(1.04411113, 0, 0.0450716503, 0)
+TextLabel.Size = UDim2.new(0, 199, 0, 35)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Counter Blox"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 23.000
+TextLabel.TextWrapped = true
+
+UICorner_8.Parent = TextLabel
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = GamesPage
+Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.BorderSizePixel = 0
+Arsenal.Position = UDim2.new(0.0141015463, 0, 0.250788599, 0)
+Arsenal.Size = UDim2.new(0, 251, 0, 141)
+Arsenal.Image = "http://www.roblox.com/asset/?id=9523595975"
+
+UICorner_9.Parent = Arsenal
+
+executeArsenal.Name = "executeArsenal"
+executeArsenal.Parent = Arsenal
+executeArsenal.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+executeArsenal.BorderSizePixel = 0
+executeArsenal.Position = UDim2.new(1.08419073, 0, 0.730654061, 0)
+executeArsenal.Size = UDim2.new(0, 179, 0, 30)
+executeArsenal.Font = Enum.Font.SourceSansBold
+executeArsenal.Text = "execute"
+executeArsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeArsenal.TextSize = 21.000
+executeArsenal.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+executeArsenal.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = executeArsenal
+
+TextLabel_2.Parent = Arsenal
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_2.Position = UDim2.new(1.04415488, 0, 0.0465174466, 0)
+TextLabel_2.Size = UDim2.new(0, 199, 0, 35)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Arsenal"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 23.000
+TextLabel_2.TextWrapped = true
+
+UICorner_11.Parent = TextLabel_2
+
+SonicSpeedSimulator.Name = "SonicSpeedSimulator"
+SonicSpeedSimulator.Parent = GamesPage
+SonicSpeedSimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SonicSpeedSimulator.BorderSizePixel = 0
+SonicSpeedSimulator.Position = UDim2.new(0.0141015463, 0, 0.498422682, 0)
+SonicSpeedSimulator.Size = UDim2.new(0, 251, 0, 141)
+SonicSpeedSimulator.Image = "http://www.roblox.com/asset/?id=9523606166"
+
+UICorner_12.Parent = SonicSpeedSimulator
+
+executeSonicSpeedSimulator.Name = "executeSonicSpeedSimulator"
+executeSonicSpeedSimulator.Parent = SonicSpeedSimulator
+executeSonicSpeedSimulator.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+executeSonicSpeedSimulator.BorderSizePixel = 0
+executeSonicSpeedSimulator.Position = UDim2.new(1.08419073, 0, 0.730654061, 0)
+executeSonicSpeedSimulator.Size = UDim2.new(0, 179, 0, 30)
+executeSonicSpeedSimulator.Font = Enum.Font.SourceSansBold
+executeSonicSpeedSimulator.Text = "execute"
+executeSonicSpeedSimulator.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeSonicSpeedSimulator.TextSize = 21.000
+executeSonicSpeedSimulator.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+executeSonicSpeedSimulator.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Sonic%20Speed%20Simulator/main.lua", true))()
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = executeSonicSpeedSimulator
+
+TextLabel_3.Parent = SonicSpeedSimulator
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_3.Position = UDim2.new(1.04415488, 0, 0.0479452796, 0)
+TextLabel_3.Size = UDim2.new(0, 199, 0, 35)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Sonic Speed Simulator"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 23.000
+TextLabel_3.TextWrapped = true
+
+UICorner_14.Parent = TextLabel_3
+
+SlashingSimulator.Name = "SlashingSimulator"
+SlashingSimulator.Parent = GamesPage
+SlashingSimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlashingSimulator.BorderSizePixel = 0
+SlashingSimulator.Position = UDim2.new(0.0141015463, 0, 0.738170326, 0)
+SlashingSimulator.Size = UDim2.new(0, 251, 0, 141)
+SlashingSimulator.Image = "http://www.roblox.com/asset/?id=9523619788"
+
+UICorner_15.Parent = SlashingSimulator
+
+executeSlashingSimulator.Name = "executeSlashingSimulator"
+executeSlashingSimulator.Parent = SlashingSimulator
+executeSlashingSimulator.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+executeSlashingSimulator.BorderSizePixel = 0
+executeSlashingSimulator.Position = UDim2.new(1.08419073, 0, 0.730654061, 0)
+executeSlashingSimulator.Size = UDim2.new(0, 179, 0, 30)
+executeSlashingSimulator.Font = Enum.Font.SourceSansBold
+executeSlashingSimulator.Text = "execute"
+executeSlashingSimulator.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeSlashingSimulator.TextSize = 21.000
+executeSlashingSimulator.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+executeSlashingSimulator.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Slashing/main/UPDATED'))()
+end)
+
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = executeSlashingSimulator
+
+TextLabel_4.Parent = SlashingSimulator
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_4.Position = UDim2.new(1.04415488, 0, 0.0493270122, 0)
+TextLabel_4.Size = UDim2.new(0, 199, 0, 35)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Slashing Simulator"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 23.000
+TextLabel_4.TextWrapped = true
+
+UICorner_17.Parent = TextLabel_4
+
+PetSimulatorX.Name = "PetSimulatorX"
+PetSimulatorX.Parent = GamesPage
+PetSimulatorX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PetSimulatorX.BorderSizePixel = 0
+PetSimulatorX.Position = UDim2.new(0.0141015463, 0, 0.738170326, 0)
+PetSimulatorX.Size = UDim2.new(0, 251, 0, 141)
+PetSimulatorX.Image = "http://www.roblox.com/asset/?id=9523634414"
+
+UICorner_18.Parent = PetSimulatorX
+
+executePetSimulatorX.Name = "executePetSimulatorX"
+executePetSimulatorX.Parent = PetSimulatorX
+executePetSimulatorX.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+executePetSimulatorX.BorderSizePixel = 0
+executePetSimulatorX.Position = UDim2.new(1.08419073, 0, 0.730654061, 0)
+executePetSimulatorX.Size = UDim2.new(0, 179, 0, 30)
+executePetSimulatorX.Font = Enum.Font.SourceSansBold
+executePetSimulatorX.Text = "execute"
+executePetSimulatorX.TextColor3 = Color3.fromRGB(255, 255, 255)
+executePetSimulatorX.TextSize = 21.000
+executePetSimulatorX.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+executePetSimulatorX.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/kB7CVpBd"))()
+end)
+
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = executePetSimulatorX
+
+TextLabel_5.Parent = PetSimulatorX
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_5.Position = UDim2.new(1.04415488, 0, 0.0493270122, 0)
+TextLabel_5.Size = UDim2.new(0, 199, 0, 35)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Pet Simulator X"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 23.000
+TextLabel_5.TextWrapped = true
+
+UICorner_20.Parent = TextLabel_5
+
+BedWars.Name = "BedWars"
+BedWars.Parent = GamesPage
+BedWars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BedWars.BorderSizePixel = 0
+BedWars.Position = UDim2.new(0.0141015463, 0, 0.738170326, 0)
+BedWars.Size = UDim2.new(0, 251, 0, 141)
+BedWars.Image = "http://www.roblox.com/asset/?id=9523685129"
+
+UICorner_21.Parent = BedWars
+
+executeBedWars.Name = "executeBedWars"
+executeBedWars.Parent = BedWars
+executeBedWars.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+executeBedWars.BorderSizePixel = 0
+executeBedWars.Position = UDim2.new(1.08419073, 0, 0.730654061, 0)
+executeBedWars.Size = UDim2.new(0, 179, 0, 30)
+executeBedWars.Font = Enum.Font.SourceSansBold
+executeBedWars.Text = "execute"
+executeBedWars.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeBedWars.TextSize = 21.000
+executeBedWars.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+executeBedWars.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = executeBedWars
+
+TextLabel_6.Parent = BedWars
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_6.Position = UDim2.new(1.04415488, 0, 0.0493270122, 0)
+TextLabel_6.Size = UDim2.new(0, 199, 0, 35)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "BedWars"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 23.000
+TextLabel_6.TextWrapped = true
+
+UICorner_23.Parent = TextLabel_6
+
+UIListLayout.Parent = GamesPage
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 15)
+
+ButtonHolder.Name = "ButtonHolder"
+ButtonHolder.Parent = BackGround
+ButtonHolder.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+ButtonHolder.BackgroundTransparency = 1.000
+ButtonHolder.Position = UDim2.new(0.0108333686, 0, 0.126182958, 0)
+ButtonHolder.Size = UDim2.new(0, 138, 0, 265)
+
+UICorner_24.Parent = ButtonHolder
+
+ButtonHolder_2.Name = "ButtonHolder"
+ButtonHolder_2.Parent = ButtonHolder
+ButtonHolder_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+ButtonHolder_2.BackgroundTransparency = 1.000
+ButtonHolder_2.Size = UDim2.new(0, 138, 0, 159)
+
+UICorner_25.Parent = ButtonHolder_2
+
+UIListLayout_2.Parent = ButtonHolder_2
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 3)
+
+Executor.Name = "Executor"
+Executor.Parent = ButtonHolder_2
+Executor.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Executor.BorderSizePixel = 0
+Executor.Position = UDim2.new(0.105072461, 0, 0, 0)
+Executor.Size = UDim2.new(0, 123, 0, 28)
+Executor.Font = Enum.Font.SourceSansBold
+Executor.Text = "Executor"
+Executor.TextColor3 = Color3.fromRGB(255, 255, 255)
+Executor.TextSize = 16.000
+
+UICorner_26.CornerRadius = UDim.new(0, 4)
+UICorner_26.Parent = Executor
+
+Settings.Name = "Settings"
+Settings.Parent = ButtonHolder_2
+Settings.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.105072461, 0, 0, 0)
+Settings.Size = UDim2.new(0, 123, 0, 28)
+Settings.Font = Enum.Font.SourceSansBold
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 16.000
+
+UICorner_27.CornerRadius = UDim.new(0, 4)
+UICorner_27.Parent = Settings
+
+GameHub.Name = "GameHub"
+GameHub.Parent = ButtonHolder_2
+GameHub.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+GameHub.BorderSizePixel = 0
+GameHub.Position = UDim2.new(0.105072461, 0, 0, 0)
+GameHub.Size = UDim2.new(0, 123, 0, 28)
+GameHub.Font = Enum.Font.SourceSansBold
+GameHub.Text = "Game's Hub"
+GameHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameHub.TextSize = 16.000
+
+UICorner_28.CornerRadius = UDim.new(0, 4)
+UICorner_28.Parent = GameHub
+
+ExecutorButtons.Name = "ExecutorButtons"
+ExecutorButtons.Parent = ButtonHolder
+ExecutorButtons.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+ExecutorButtons.BorderSizePixel = 0
+ExecutorButtons.Position = UDim2.new(0.0615942031, 0, 0.883018851, 0)
+ExecutorButtons.Size = UDim2.new(0, 122, 0, 31)
+
+UICorner_29.CornerRadius = UDim.new(0, 4)
+UICorner_29.Parent = ExecutorButtons
+
+Execute.Name = "Execute"
+Execute.Parent = ExecutorButtons
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 1.000
+Execute.Position = UDim2.new(0.245901644, 0, 0.201321512, 0)
+Execute.Size = UDim2.new(0, 22, 0, 18)
+Execute.Image = "rbxassetid://4918373417"
+
+Clear.Name = "Clear"
+Clear.Parent = ExecutorButtons
+Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clear.BackgroundTransparency = 1.000
+Clear.Position = UDim2.new(0.508196712, 0, 0.201321498, 0)
+Clear.Size = UDim2.new(0, 22, 0, 18)
+Clear.Image = "rbxassetid://9348208337"
+
+UICorner_30.CornerRadius = UDim.new(0, 6)
+UICorner_30.Parent = MainTopBar
+
+Shadow.Name = "Shadow"
+Shadow.Parent = MainTopBar
+Shadow.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(-0.000176167188, 0, 0.782997668, 0)
+Shadow.Size = UDim2.new(0, 563, 0, 6)
+Shadow.ZIndex = 2
+
+Title.Name = "Title"
+Title.Parent = MainTopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0228709448, 0, 0, 0)
+Title.Size = UDim2.new(0, 62, 0, 30)
+Title.ZIndex = 2
+Title.Font = Enum.Font.SourceSansBold
+Title.LineHeight = 1.100
+Title.Text = "Novaline"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 18.000
+Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextStrokeTransparency = 0.940
+
+Close.Name = "Close"
+Close.Parent = MainTopBar
+Close.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+Close.Position = UDim2.new(0.960923612, 0, 0.284016937, 0)
+Close.Size = UDim2.new(0, 12, 0, 12)
+Close.ZIndex = 2
+Close.Font = Enum.Font.SourceSans
+Close.Text = ""
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+UICorner_31.CornerRadius = UDim.new(1, 0)
+UICorner_31.Parent = Close
+
+Title_2.Name = "Title"
+Title_2.Parent = MainTopBar
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.78164959, 0, 0.150683597, 0)
+Title_2.Size = UDim2.new(0, 81, 0, 20)
+Title_2.ZIndex = 2
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.LineHeight = 1.100
+Title_2.Text = "1  Error Found!"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 15.000
+Title_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextStrokeTransparency = 0.940
+
+Title_3.Name = "Title"
+Title_3.Parent = MainTopBar
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.90531373, 0, 0, 0)
+Title_3.Size = UDim2.new(0, 36, 0, 30)
+Title_3.ZIndex = 2
+Title_3.Font = Enum.Font.SourceSansBold
+Title_3.LineHeight = 1.100
+Title_3.Text = "[U]"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 18.000
+Title_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextStrokeTransparency = 0.940
+
+Title_4.Name = "Title"
+Title_4.Parent = MainTopBar
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0.470199198, 0, 0, 0)
+Title_4.Size = UDim2.new(0, 62, 0, 30)
+Title_4.ZIndex = 2
+Title_4.Font = Enum.Font.SourceSansBold
+Title_4.LineHeight = 1.100
+Title_4.Text = "v1.3.7"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 18.000
+Title_4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextStrokeTransparency = 0.940
+
+LoaderTopBar.Name = "LoaderTopBar"
+LoaderTopBar.Parent = UI
+LoaderTopBar.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+LoaderTopBar.Position = UDim2.new(0.261999995, 0, 0.317000002, 0)
+LoaderTopBar.Size = UDim2.new(0, 563, 0, 30)
+LoaderTopBar.ZIndex = 2
+
+BackGround_2.Name = "BackGround"
+BackGround_2.Parent = LoaderTopBar
+BackGround_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+BackGround_2.Position = UDim2.new(-0.000176167188, 0, 0, 0)
+BackGround_2.Size = UDim2.new(0, 563, 0, 317)
+
+UICorner_32.CornerRadius = UDim.new(0, 6)
+UICorner_32.Parent = BackGround_2
+
+Bootstrapper.Name = "Bootstrapper"
+Bootstrapper.Parent = BackGround_2
+Bootstrapper.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Bootstrapper.Position = UDim2.new(-0.000176167188, 0, 0, 0)
+Bootstrapper.Size = UDim2.new(0, 563, 0, 317)
+
+UICorner_33.Parent = Bootstrapper
+
+NovalineboostText.Name = "NovalineboostText"
+NovalineboostText.Parent = Bootstrapper
+NovalineboostText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NovalineboostText.BackgroundTransparency = 1.000
+NovalineboostText.Position = UDim2.new(0.0266429819, 0, 0.0946372151, 0)
+NovalineboostText.Size = UDim2.new(0, 211, 0, 40)
+NovalineboostText.ZIndex = 2
+NovalineboostText.Font = Enum.Font.Nunito
+NovalineboostText.LineHeight = 1.100
+NovalineboostText.Text = "Novaline Loader"
+NovalineboostText.TextColor3 = Color3.fromRGB(255, 255, 255)
+NovalineboostText.TextSize = 28.000
+NovalineboostText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+NovalineboostText.TextStrokeTransparency = 0.940
+NovalineboostText.TextXAlignment = Enum.TextXAlignment.Left
+
+LoadingAboutText.Name = "LoadingAboutText"
+LoadingAboutText.Parent = Bootstrapper
+LoadingAboutText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingAboutText.BackgroundTransparency = 1.000
+LoadingAboutText.Position = UDim2.new(0.0266429838, 0, 0.220820189, 0)
+LoadingAboutText.Size = UDim2.new(0, 366, 0, 40)
+LoadingAboutText.ZIndex = 2
+LoadingAboutText.Font = Enum.Font.Nunito
+LoadingAboutText.LineHeight = 1.100
+LoadingAboutText.Text = "Novaline is loading the needed scripts, this can take a while if you have slow internet."
+LoadingAboutText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadingAboutText.TextSize = 18.000
+LoadingAboutText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+LoadingAboutText.TextStrokeTransparency = 0.940
+LoadingAboutText.TextWrapped = true
+LoadingAboutText.TextXAlignment = Enum.TextXAlignment.Left
+LoadingAboutText.TextYAlignment = Enum.TextYAlignment.Top
+
+versionText.Name = "versionText"
+versionText.Parent = Bootstrapper
+versionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+versionText.BackgroundTransparency = 1.000
+versionText.Position = UDim2.new(0.0266429838, 0, 0.381703466, 0)
+versionText.Size = UDim2.new(0, 155, 0, 20)
+versionText.ZIndex = 2
+versionText.Font = Enum.Font.Nunito
+versionText.LineHeight = 1.100
+versionText.Text = "Novaline version: v1.3.7"
+versionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+versionText.TextSize = 20.000
+versionText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+versionText.TextStrokeTransparency = 0.940
+versionText.TextXAlignment = Enum.TextXAlignment.Left
+versionText.TextYAlignment = Enum.TextYAlignment.Top
+
+versionText_2.Name = "versionText"
+versionText_2.Parent = Bootstrapper
+versionText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+versionText_2.BackgroundTransparency = 1.000
+versionText_2.Position = UDim2.new(0.0266429838, 0, 0.50788641, 0)
+versionText_2.Size = UDim2.new(0, 123, 0, 20)
+versionText_2.ZIndex = 2
+versionText_2.Font = Enum.Font.Nunito
+versionText_2.LineHeight = 1.100
+versionText_2.Text = "Required Exploits:"
+versionText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+versionText_2.TextSize = 20.000
+versionText_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+versionText_2.TextStrokeTransparency = 0.940
+versionText_2.TextXAlignment = Enum.TextXAlignment.Left
+versionText_2.TextYAlignment = Enum.TextYAlignment.Top
+
+Checks.Name = "Checks"
+Checks.Parent = Bootstrapper
+Checks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checks.BackgroundTransparency = 1.000
+Checks.Position = UDim2.new(0.0248667859, 0, 0.590054572, 0)
+Checks.Size = UDim2.new(0, 114, 0, 87)
+
+Novaline.Name = "Novaline"
+Novaline.Parent = Checks
+Novaline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Novaline.BackgroundTransparency = 1.000
+Novaline.Position = UDim2.new(0.081705153, 0, 0.753943205, 0)
+Novaline.Size = UDim2.new(0, 52, 0, 22)
+Novaline.Font = Enum.Font.Nunito
+Novaline.LineHeight = 1.270
+Novaline.Text = "Novaline"
+Novaline.TextColor3 = Color3.fromRGB(255, 255, 255)
+Novaline.TextSize = 14.000
+Novaline.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Novaline.TextStrokeTransparency = 0.920
+
+Outline2.Name = "Outline2"
+Outline2.Parent = Novaline
+Outline2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Outline2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Outline2.Position = UDim2.new(-0.607972383, 0, -0.0433036685, 0)
+Outline2.Size = UDim2.new(0, 23, 0, 22)
+Outline2.SliceScale = -2.000
+
+CheckMark.Name = "CheckMark"
+CheckMark.Parent = Outline2
+CheckMark.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+CheckMark.BackgroundTransparency = 1.000
+CheckMark.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CheckMark.Position = UDim2.new(0.304347813, 0, 0.25, 0)
+CheckMark.Size = UDim2.new(0, 10, 0, 10)
+CheckMark.Image = "rbxassetid://4919148038"
+CheckMark.SliceScale = -2.000
+
+UIListLayout_3.Parent = Outline2
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Krnl.Name = "Krnl"
+Krnl.Parent = Checks
+Krnl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Krnl.BackgroundTransparency = 1.000
+Krnl.Position = UDim2.new(0.346491218, 0, 0.321839094, 0)
+Krnl.Size = UDim2.new(0, 52, 0, 22)
+Krnl.Font = Enum.Font.Nunito
+Krnl.LineHeight = 1.150
+Krnl.Text = " Krnl"
+Krnl.TextColor3 = Color3.fromRGB(255, 255, 255)
+Krnl.TextSize = 14.000
+Krnl.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Krnl.TextStrokeTransparency = 0.920
+Krnl.TextXAlignment = Enum.TextXAlignment.Left
+
+Outline2_2.Name = "Outline2"
+Outline2_2.Parent = Krnl
+Outline2_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Outline2_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Outline2_2.Position = UDim2.new(-0.607972383, 0, -0.0433036685, 0)
+Outline2_2.Size = UDim2.new(0, 23, 0, 22)
+Outline2_2.SliceScale = -2.000
+
+CheckMark_2.Name = "CheckMark"
+CheckMark_2.Parent = Outline2_2
+CheckMark_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+CheckMark_2.BackgroundTransparency = 1.000
+CheckMark_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CheckMark_2.Position = UDim2.new(0.304347813, 0, 0.25, 0)
+CheckMark_2.Size = UDim2.new(0, 10, 0, 10)
+CheckMark_2.Image = "rbxassetid://4919148038"
+CheckMark_2.SliceScale = -2.000
+
+UIListLayout_4.Parent = Outline2_2
+UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.VerticalAlignment = Enum.VerticalAlignment.Center
+
+SynapseX.Name = "Synapse X"
+SynapseX.Parent = Checks
+SynapseX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SynapseX.BackgroundTransparency = 1.000
+SynapseX.Position = UDim2.new(0.081705153, 0, 0.593059957, 0)
+SynapseX.Size = UDim2.new(0, 52, 0, 22)
+SynapseX.Font = Enum.Font.Nunito
+SynapseX.LineHeight = 1.270
+SynapseX.Text = "  Synapse X"
+SynapseX.TextColor3 = Color3.fromRGB(255, 255, 255)
+SynapseX.TextSize = 14.000
+SynapseX.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+SynapseX.TextStrokeTransparency = 0.920
+
+Outline1.Name = "Outline1"
+Outline1.Parent = SynapseX
+Outline1.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Outline1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Outline1.Position = UDim2.new(-0.607972383, 0, -0.0433036685, 0)
+Outline1.Size = UDim2.new(0, 23, 0, 22)
+Outline1.SliceScale = -2.000
+
+CheckMark_3.Name = "CheckMark"
+CheckMark_3.Parent = Outline1
+CheckMark_3.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+CheckMark_3.BackgroundTransparency = 1.000
+CheckMark_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CheckMark_3.Position = UDim2.new(0.304347813, 0, 0.25, 0)
+CheckMark_3.Size = UDim2.new(0, 10, 0, 10)
+CheckMark_3.Image = "rbxassetid://4919148038"
+CheckMark_3.SliceScale = -2.000
+
+UIListLayout_5.Parent = Outline1
+UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.VerticalAlignment = Enum.VerticalAlignment.Center
+
+UIListLayout_6.Parent = Checks
+UIListLayout_6.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_6.Padding = UDim.new(0, 6)
+
+versionText_3.Name = "versionText"
+versionText_3.Parent = Bootstrapper
+versionText_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+versionText_3.BackgroundTransparency = 1.000
+versionText_3.Position = UDim2.new(0.0230905861, 0, 0.899053514, 0)
+versionText_3.Size = UDim2.new(0, 352, 0, 20)
+versionText_3.ZIndex = 2
+versionText_3.Font = Enum.Font.Nunito
+versionText_3.LineHeight = 1.100
+versionText_3.Text = "Novaline Discord Server: https://novaline.xyz/discord"
+versionText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+versionText_3.TextSize = 20.000
+versionText_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+versionText_3.TextStrokeTransparency = 0.940
+versionText_3.TextXAlignment = Enum.TextXAlignment.Left
+versionText_3.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_34.CornerRadius = UDim.new(0, 6)
+UICorner_34.Parent = LoaderTopBar
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = LoaderTopBar
+Shadow_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Position = UDim2.new(-0.000176167188, 0, 0.782997668, 0)
+Shadow_2.Size = UDim2.new(0, 563, 0, 6)
+Shadow_2.ZIndex = 2
+
+Title_5.Name = "Title"
+Title_5.Parent = LoaderTopBar
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.Position = UDim2.new(0.0106571941, 0, 0, 0)
+Title_5.Size = UDim2.new(0, 61, 0, 30)
+Title_5.ZIndex = 2
+Title_5.Font = Enum.Font.Nunito
+Title_5.LineHeight = 1.100
+Title_5.Text = "Novaline"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextSize = 18.000
+Title_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextStrokeTransparency = 0.940
+
+Close_2.Name = "Close"
+Close_2.Parent = LoaderTopBar
+Close_2.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+Close_2.Position = UDim2.new(0.960923612, 0, 0.284016937, 0)
+Close_2.Size = UDim2.new(0, 12, 0, 12)
+Close_2.ZIndex = 2
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = ""
+Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.TextSize = 14.000
+
+UICorner_35.CornerRadius = UDim.new(1, 0)
+UICorner_35.Parent = Close_2
+
+-- Scripts:
+
+local function URNKK_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	-- Decompiled with the Synapse X Luau decompiler.
+	
+	local l__Source__1 = script.Parent.EditorFrame.Source;
+	local function u1(p1, p2)
+		local v2 = {};
+		for v3, v4 in pairs(p2) do
+			v2[v4] = true;
+		end;
+		local u2 = {
+			["="] = true, 
+			["."] = true, 
+			[","] = true, 
+			["("] = true, 
+			[")"] = true, 
+			["["] = true, 
+			["]"] = true, 
+			["{"] = true, 
+			["}"] = true, 
+			[":"] = true, 
+			["*"] = true, 
+			["/"] = true, 
+			["+"] = true, 
+			["-"] = true, 
+			["%"] = true, 
+			[";"] = true, 
+			["~"] = true
+		};
+		return p1:gsub(".", function(p3)
+			if u2[p3] == nil then
+				return p3;
+			end;
+			return " ";
+		end):gsub("%S+", function(p4)
+			if v2[p4] ~= nil then
+				return p4;
+			end;
+			return (" "):rep(#p4);
+		end);
+	end;
+	local u3 = { "and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while" };
+	local u4 = { "getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16" };
+	local function u5(p5)
+		local u6 = {
+			["="] = true, 
+			["."] = true, 
+			[","] = true, 
+			["("] = true, 
+			[")"] = true, 
+			["["] = true, 
+			["]"] = true, 
+			["{"] = true, 
+			["}"] = true, 
+			[":"] = true, 
+			["*"] = true, 
+			["/"] = true, 
+			["+"] = true, 
+			["-"] = true, 
+			["%"] = true, 
+			[";"] = true, 
+			["~"] = true
+		};
+		local u7 = "";
+		p5:gsub(".", function(p6)
+			if u6[p6] ~= nil then
+				u7 = u7 .. p6;
+				return;
+			end;
+			if p6 == "\n" then
+				u7 = u7 .. "\n";
+				return;
+			end;
+			if p6 == "\t" then
+				u7 = u7 .. "\t";
+				return;
+			end;
+			u7 = u7 .. " ";
+		end);
+		return "";
+	end;
+	local function u8(p7)
+		local u9 = "";
+		p7:gsub(".", function(p8)
+			if tonumber(p8) ~= nil then
+				u9 = u9 .. p8;
+				return;
+			end;
+			if p8 == "\n" then
+				u9 = u9 .. "\n";
+				return;
+			end;
+			if p8 == "\t" then
+				u9 = u9 .. "\t";
+				return;
+			end;
+			u9 = u9 .. " ";
+		end);
+		return "";
+	end;
+	local function u10(p9)
+		local u11 = false;
+		local u12 = "";
+		p9:gsub(".", function(p10)
+			if u11 == false and p10 == "\"" then
+				u11 = true;
+			elseif u11 == true and p10 == "\"" then
+				u11 = false;
+			end;
+			if u11 == false and p10 == "\"" then
+				u12 = u12 .. "\"";
+				return;
+			end;
+			if p10 == "\n" then
+				u12 = u12 .. "\n";
+				return;
+			end;
+			if p10 == "\t" then
+				u12 = u12 .. "\t";
+				return;
+			end;
+			if u11 == true then
+				u12 = u12 .. p10;
+				return;
+			end;
+			if u11 == false then
+				u12 = u12 .. " ";
+			end;
+		end);
+		return "";
+	end;
+	local l__Lines__13 = l__Source__1.Parent.Lines;
+	local function v5(p11)
+		if p11 == "Text" then
+			l__Source__1.Text = l__Source__1.Text:gsub("\r", "");
+			l__Source__1.Text = l__Source__1.Text:gsub("\t", "      ");
+			local l__Text__6 = l__Source__1.Text;
+			l__Source__1.Keywords_.Text = u1(l__Text__6, u3);
+			l__Source__1.Globals_.Text = u1(l__Text__6, u4);
+			l__Source__1.RemoteHighlight_.Text = u1(l__Text__6, { "FireServer", "fireServer", "InvokeServer", "invokeServer" });
+			l__Source__1.Tokens_.Text = u5(l__Text__6);
+			l__Source__1.Numbers_.Text = u8(l__Text__6);
+			l__Source__1.Strings_.Text = u10(l__Text__6);
+			local u14 = 1;
+			l__Text__6:gsub("\n", function()
+				u14 = u14 + 1;
+			end);
+			l__Lines__13.Text = "";
+			for v7 = 1, u14 do
+				l__Lines__13.Text = l__Lines__13.Text .. v7 .. "\n";
+			end;
+		end;
+	end;
+	v5("Text");
+	l__Source__1.Changed:Connect(v5);
+	
+end
+coroutine.wrap(URNKK_fake_script)()
+local function MOJWFX_fake_script() -- AntiAfkToggle.LocalScript 
+	local script = Instance.new('LocalScript', AntiAfkToggle)
+
+	_G.AntiAfk = false;
+	
+	local checked = false
+	local a = script.Parent.Parent.Unchecked
+	local b = script.Parent
+	
+	Tween = function(Obj, Time, Settings)	
+		game:GetService("TweenService"):Create(Obj, TweenInfo.new(Time), Settings):Play()
+	end
+	
+	b.MouseButton1Click:Connect(function()
+		if checked == false then
+			checked = true
+			Tween(a, 0.2, {ImageTransparency = 1})
+		elseif checked == true then
+			checked = false
+			Tween(a, 0.2, {ImageTransparency = 0})
+		end
+	end)
+end
+coroutine.wrap(MOJWFX_fake_script)()
+local function HSUVNRF_fake_script() -- executeCounterBlox.Animations 
+	local script = Instance.new('LocalScript', executeCounterBlox)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(HSUVNRF_fake_script)()
+local function BIVT_fake_script() -- executeArsenal.Animations 
+	local script = Instance.new('LocalScript', executeArsenal)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(BIVT_fake_script)()
+local function ETML_fake_script() -- executeSonicSpeedSimulator.Animations 
+	local script = Instance.new('LocalScript', executeSonicSpeedSimulator)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(ETML_fake_script)()
+local function DARGLK_fake_script() -- executeSlashingSimulator.Animations 
+	local script = Instance.new('LocalScript', executeSlashingSimulator)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(DARGLK_fake_script)()
+local function XJXNS_fake_script() -- executePetSimulatorX.Animations 
+	local script = Instance.new('LocalScript', executePetSimulatorX)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(XJXNS_fake_script)()
+local function EINVV_fake_script() -- executeBedWars.Animations 
+	local script = Instance.new('LocalScript', executeBedWars)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(EINVV_fake_script)()
+local function UOQDVHU_fake_script() -- Executor.Animations 
+	local script = Instance.new('LocalScript', Executor)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(UOQDVHU_fake_script)()
+local function BWQMK_fake_script() -- Executor.LocalScript 
+	local script = Instance.new('LocalScript', Executor)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.SettingsPage.Visible = false
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.executorPage.Visible = true
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.GamesPage.Visible = false
+	end)
+end
+coroutine.wrap(BWQMK_fake_script)()
+local function UPAL_fake_script() -- Settings.Animations 
+	local script = Instance.new('LocalScript', Settings)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(UPAL_fake_script)()
+local function SIJTDPU_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.SettingsPage.Visible = true
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.executorPage.Visible = false
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.GamesPage.Visible = false
+	end)
+end
+coroutine.wrap(SIJTDPU_fake_script)()
+local function SBXY_fake_script() -- GameHub.Animations 
+	local script = Instance.new('LocalScript', GameHub)
+
+	local TweenService = game:GetService("TweenService")
+	local TweenSpeed = 0.1
+	local Info = TweenInfo.new(TweenSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0)
+	
+	local frame = script.Parent
+	
+	-- Button --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(18, 18, 18)
+		TweenService:Create(frame, Info, {BackgroundColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(35, 35, 35)
+		TweenService:Create(frame, Info, {BackgroundColor3 = ColorColor}):Play()
+	end)
+	
+	-- Text --
+	
+	script.Parent.MouseEnter:Connect(function()
+		local Color = Color3.fromRGB(30, 30, 30)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = Color}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		local ColorColor = Color3.fromRGB(255, 255, 255)
+		TweenService:Create(script.Parent.Text, Info, {TextColor3 = ColorColor}):Play()
+	end)
+end
+coroutine.wrap(SBXY_fake_script)()
+local function YLLRXDE_fake_script() -- GameHub.LocalScript 
+	local script = Instance.new('LocalScript', GameHub)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.SettingsPage.Visible = false
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.executorPage.Visible = false
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.GamesPage.Visible = true
+	end)
+end
+coroutine.wrap(YLLRXDE_fake_script)()
+local function HRVYTO_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		wait(0.5)
+		print("error")
+		wait(0.5)
+		print("check if code is lua!")
+	end)
+end
+coroutine.wrap(HRVYTO_fake_script)()
+local function YLPLRE_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.PageHolder.executorPage.ImageLabel.EditorFrame.Source.Text = ""
+	end)
+end
+coroutine.wrap(YLPLRE_fake_script)()
+local function KYLYHR_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.MainTopBar:Destroy()
+	end)
+end
+coroutine.wrap(KYLYHR_fake_script)()
+local function SYONW_fake_script() -- MainTopBar.LocalScript 
+	local script = Instance.new('LocalScript', MainTopBar)
+
+	wait()
+	print("thanks for using novaline!")
+end
+coroutine.wrap(SYONW_fake_script)()
+local function EWUI_fake_script() -- MainTopBar.LocalScript 
+	local script = Instance.new('LocalScript', MainTopBar)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.U then 
+				if script.Parent.Parent.MainTopBar.Visible == false then
+					script.Parent.Parent.MainTopBar.Visible = true
+				else
+					script.Parent.Parent.MainTopBar.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(EWUI_fake_script)()
+local function OPLRJPH_fake_script() -- MainTopBar.Dragify 
+	local script = Instance.new('LocalScript', MainTopBar)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(OPLRJPH_fake_script)()
+local function HGEAAH_fake_script() -- Close_2.Script 
+	local script = Instance.new('Script', Close_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.LoaderTopBar:Destroy()
+	end)
+end
+coroutine.wrap(HGEAAH_fake_script)()
+local function HDQAQW_fake_script() -- LoaderTopBar.LocalScript 
+	local script = Instance.new('LocalScript', LoaderTopBar)
+
+	wait(6)
+	script.Parent.BackGround.Bootstrapper.Continue.Visible = true
+end
+coroutine.wrap(HDQAQW_fake_script)()
+local function XAMEEW_fake_script() -- LoaderTopBar.Dragify 
+	local script = Instance.new('LocalScript', LoaderTopBar)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(XAMEEW_fake_script)()
+local function EYFX_fake_script() -- LoaderTopBar.LocalScript 
+	local script = Instance.new('LocalScript', LoaderTopBar)
+
+	wait(20)
+	script.Parent.Parent.MainTopBar.Visible = true
+	wait()
+	script.Parent.Parent.LoaderTopBar:Destroy()
+end
+coroutine.wrap(EYFX_fake_script)()
