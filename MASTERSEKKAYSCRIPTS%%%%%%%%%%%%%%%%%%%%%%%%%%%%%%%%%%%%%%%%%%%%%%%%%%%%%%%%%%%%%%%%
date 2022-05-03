@@ -201,7 +201,7 @@ Source.ClearTextOnFocus = false
 Source.Font = Enum.Font.Code
 Source.MultiLine = true
 Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
-Source.Text = "print(\"Welcome to Novaline!\")"
+Source.Text = "print(\"Welcome to PitchHub!\")"
 Source.TextColor3 = Color3.fromRGB(204, 204, 204)
 Source.TextSize = 15.000
 Source.TextXAlignment = Enum.TextXAlignment.Left
@@ -753,7 +753,7 @@ Title.Size = UDim2.new(0, 62, 0, 30)
 Title.ZIndex = 2
 Title.Font = Enum.Font.SourceSansBold
 Title.LineHeight = 1.100
-Title.Text = "Novaline"
+Title.Text = "Pitch Hub"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 18.000
 Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -851,7 +851,7 @@ NovalineboostText.Size = UDim2.new(0, 211, 0, 40)
 NovalineboostText.ZIndex = 2
 NovalineboostText.Font = Enum.Font.Nunito
 NovalineboostText.LineHeight = 1.100
-NovalineboostText.Text = "Novaline Loader"
+NovalineboostText.Text = "PitchHub Loader"
 NovalineboostText.TextColor3 = Color3.fromRGB(255, 255, 255)
 NovalineboostText.TextSize = 28.000
 NovalineboostText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -867,7 +867,7 @@ LoadingAboutText.Size = UDim2.new(0, 366, 0, 40)
 LoadingAboutText.ZIndex = 2
 LoadingAboutText.Font = Enum.Font.Nunito
 LoadingAboutText.LineHeight = 1.100
-LoadingAboutText.Text = "Novaline is loading the needed scripts, this can take a while if you have slow internet."
+LoadingAboutText.Text = "PitchHub is loading the needed scripts, this can take a while if you have slow internet."
 LoadingAboutText.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoadingAboutText.TextSize = 18.000
 LoadingAboutText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -885,7 +885,7 @@ versionText.Size = UDim2.new(0, 155, 0, 20)
 versionText.ZIndex = 2
 versionText.Font = Enum.Font.Nunito
 versionText.LineHeight = 1.100
-versionText.Text = "Novaline version: v1.3.7"
+versionText.Text = "PitchHub version: v1.3.7"
 versionText.TextColor3 = Color3.fromRGB(255, 255, 255)
 versionText.TextSize = 20.000
 versionText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -1043,7 +1043,7 @@ versionText_3.Size = UDim2.new(0, 352, 0, 20)
 versionText_3.ZIndex = 2
 versionText_3.Font = Enum.Font.Nunito
 versionText_3.LineHeight = 1.100
-versionText_3.Text = "Novaline Discord Server: https://novaline.xyz/discord"
+versionText_3.Text = "PitchHub By Sekkay God Scripts"
 versionText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 versionText_3.TextSize = 20.000
 versionText_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -1071,7 +1071,7 @@ Title_5.Size = UDim2.new(0, 61, 0, 30)
 Title_5.ZIndex = 2
 Title_5.Font = Enum.Font.Nunito
 Title_5.LineHeight = 1.100
-Title_5.Text = "Novaline"
+Title_5.Text = "PitchHub"
 Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_5.TextSize = 18.000
 Title_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -1661,7 +1661,7 @@ local function SYONW_fake_script() -- MainTopBar.LocalScript
 	local script = Instance.new('LocalScript', MainTopBar)
 
 	wait()
-	print("thanks for using novaline!")
+	print("thanks for using PitchHub!")
 end
 coroutine.wrap(SYONW_fake_script)()
 local function EWUI_fake_script() -- MainTopBar.LocalScript 
